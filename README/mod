@@ -1,2 +1,134 @@
-# resume
-Мое резюме
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Canvas</title>
+
+<canvas id="circle" width="1000" height="1000">
+    <p>??? ??????? ?? ???????????? ?????????.</p>
+  </canvas>
+
+<script>
+
+
+function circle()
+{
+    var canvas = document.getElementById('circle');
+    var obCanvas = canvas.getContext('2d');
+    
+    obCanvas.fillStyle = "red";
+    obCanvas.beginPath();
+    obCanvas.arc(500,90,50,0,Math.PI*2,true);
+    obCanvas.closePath();
+    obCanvas.stroke();
+    obCanvas.fill();
+
+    //????????
+    obCanvas.beginPath();
+    obCanvas.scale(1, 5); // ??????????? ?? ????????? ? 2 ????
+    obCanvas.strokeStyle = 'Lime'; 
+    obCanvas.lineWidth = 5;
+    obCanvas.arc(500, 75, 50, 0, Math.PI*2, true);
+    obCanvas.resetTransform();
+    obCanvas.closePath();
+    obCanvas.fillStyle = 'Orchid';
+    obCanvas.fill(); 
+    obCanvas.stroke();
+
+    //????? ?????
+    obCanvas.beginPath();
+    obCanvas.scale(1, 1.3);
+    obCanvas.lineWidth = 5;
+    obCanvas.arc(405, 200, 50, 0, Math.PI*2, true);
+    obCanvas.closePath();
+    obCanvas.fillStyle = 'Orchid';
+    obCanvas.fill();
+    obCanvas.stroke();
+
+    obCanvas.fillStyle = "red";
+    obCanvas.beginPath();
+    obCanvas.arc(405,200,25,0,Math.PI*2,true);
+    obCanvas.closePath();
+    obCanvas.stroke();
+    obCanvas.fill();
+
+
+    obCanvas.beginPath(); 
+    obCanvas.lineWidth = 5;
+    obCanvas.arc(375, 325, 75, 0, Math.PI*2, true);
+    obCanvas.resetTransform();
+    obCanvas.closePath();
+    obCanvas.fillStyle = 'orange';
+    obCanvas.fill(); 
+    obCanvas.stroke();
+
+    obCanvas.fillStyle = "red";
+    obCanvas.beginPath();
+    obCanvas.arc(360,390,20,0,Math.PI*2,true);
+    obCanvas.closePath();
+    obCanvas.stroke();
+    obCanvas.fill();
+
+    obCanvas.fillStyle = "red";
+    obCanvas.beginPath();
+    obCanvas.arc(400,440,20,0,Math.PI*2,true);
+    obCanvas.closePath();
+    obCanvas.stroke();
+    obCanvas.fill();
+
+    //?????? ?????
+    obCanvas.beginPath();
+    obCanvas.scale(1, 1.3); 
+    obCanvas.lineWidth = 5;
+    obCanvas.arc(595, 200, 50, 0, Math.PI*2, true);
+    obCanvas.closePath();
+    obCanvas.fillStyle = 'Orchid';
+    obCanvas.fill();
+    obCanvas.stroke();
+
+    obCanvas.fillStyle = "red";
+    obCanvas.beginPath();
+    obCanvas.arc(595,200,25,0,Math.PI*2,true);
+    obCanvas.closePath();
+    obCanvas.stroke();
+    obCanvas.fill();
+    obCanvas.stroke();
+
+    obCanvas.beginPath();
+    obCanvas.lineWidth = 5;
+    obCanvas.arc(625, 325, 75, 0, Math.PI*2, true);
+    obCanvas.resetTransform();
+    obCanvas.closePath();
+    obCanvas.fillStyle = 'orange';
+    obCanvas.fill(); 
+    obCanvas.stroke();
+
+    obCanvas.fillStyle = "red";
+    obCanvas.beginPath();
+    obCanvas.arc(660,390,20,0,Math.PI*2,true);
+    obCanvas.closePath();
+    obCanvas.stroke();
+    obCanvas.fill();
+
+    obCanvas.fillStyle = "red";
+    obCanvas.beginPath();
+    obCanvas.arc(600,440,20,0,Math.PI*2,true);
+    obCanvas.closePath();
+    obCanvas.stroke();
+    obCanvas.fill();
+
+    
+ 
+
+
+}
+
+</script>
+</head>
+
+<body onLoad="circle()">
+
+<canvas id="circle"></canvas>
+
+</body>
+</html>
